@@ -1,0 +1,17 @@
+html[data-theme='dark'] {
+    //  Text
+    --text-color: #ececec;
+    //  Body
+    --background-color: #191820;
+}
+
+html[data-theme='light'] {
+    //  text
+    --text-color: #191820;
+    //  Body
+    --background-color: #ececec;
+}
+
+html {
+    --color-primary: #30d5c8;
+}

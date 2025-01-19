@@ -1,0 +1,19 @@
+@use '@/App/styles/mixins/fontMixins' as mixins;
+
+.navMenu {
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        &_item {
+            &_link {
+                @include mixins.link;
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@use './../variables/globals';
+
+@mixin logo_text {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-logo-text);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin logo_text__small {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-logo-text__small);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+
+@mixin link {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-link);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+
+@mixin header-card {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-header-card);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: var(--letter-spacing-0075);
+}
+
+@mixin page-product-price {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-page-product-price);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: var(--letter-spacing-01);
+}
+
+@mixin product-price {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-product-price);
+    font-weight: var(--weight-extrabold);
+    letter-spacing: var(--letter-spacing-01);
+}
+
+@mixin product-price-old {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-product-price-old);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-0);
+}
+
+@mixin description {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-text-description);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing--02);
+}
+
+@mixin text-menu {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-menu);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--letter-spacing-0025);
+}
+
+@mixin text-product-description {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-product-description);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing-0075);
+}
+
+@mixin product-card-title {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-product-card-title);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--letter-spacing-0025);
+}
+
+@mixin text-category {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-category);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--letter-spacing-0025);
+}
+
+@mixin text-label {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-label);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing-0025);
+}
+
+@mixin text-button {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-button);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing-0025);
+}
+
+@mixin text-data {
+    font-family: var(--font-roboto);
+    font-size: var(--font-size-text-data);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing-0025);
+}

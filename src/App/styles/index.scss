@@ -1,2 +1,33 @@
 @use 'scss-reset/reset';
 @use 'variables/globals';
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    transition: background-color 0.3s ease-in-out;
+
+    a,
+    button {
+        text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    button {
+        color: var(--text-color);
+        font-family: var(--font-montserrat);
+        font-weight: var(--weight-regular);
+
+        transition: color 0.3s ease-in-out;
+    }
+}

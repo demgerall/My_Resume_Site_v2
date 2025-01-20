@@ -11,13 +11,7 @@ import SunIconWhite from '@/shared/assets/icons/sun_white.svg';
 
 import styles from './Header.module.scss';
 
-interface HeaderProps {
-    className?: string;
-}
-
-export const Header = (props: HeaderProps) => {
-    const { className = '' } = props;
-
+export const Header = () => {
     const { theme, setTheme } = useTheme();
 
     const toggleTheme = () => {
@@ -29,7 +23,7 @@ export const Header = (props: HeaderProps) => {
     };
 
     return (
-        <header className={classNames(styles.header, [className])}>
+        <header className={styles.header}>
             <HashLink smooth to={'/'} className={styles.header_logo_link}>
                 <span
                     className={classNames(

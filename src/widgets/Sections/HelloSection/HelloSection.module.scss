@@ -1,0 +1,66 @@
+@use '@/App/styles/mixins/fontMixins' as mixins;
+
+.helloSection {
+    width: 100%;
+    padding: 2vw 10vw;
+
+    display: flex;
+    align-items: center;
+
+    &_textBlock {
+        width: 50%;
+        padding: 0 50px;
+
+        display: flex;
+        align-items: center;
+
+        &_title {
+            @include mixins.heading;
+
+            &__primary {
+                color: var(--color-primary);
+                font-weight: var(--weight-bold);
+            }
+
+            &_cursor {
+                font-weight: var(--weight-bold);
+
+                animation: blink 1s step-end infinite;
+            }
+        }
+    }
+
+    &_imageBlock {
+        width: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_mainImage {
+            animation: shimmer 7.5s infinite;
+        }
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        filter: drop-shadow(0px 0px 50px var(--color-primary-transparent95));
+    }
+    50% {
+        filter: drop-shadow(0px 0px 20px var(--color-primary-transparent75));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 50px var(--color-primary-transparent95));
+    }
+}

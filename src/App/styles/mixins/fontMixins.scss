@@ -20,18 +20,11 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin header-card {
+@mixin heading {
     font-family: var(--font-montserrat);
-    font-size: var(--font-size-header-card);
-    font-weight: var(--weight-extrabold);
-    letter-spacing: var(--letter-spacing-0075);
-}
-
-@mixin page-product-price {
-    font-family: var(--font-montserrat);
-    font-size: var(--font-size-page-product-price);
-    font-weight: var(--weight-extrabold);
-    letter-spacing: var(--letter-spacing-01);
+    font-size: var(--font-size-heading);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
 }
 
 @mixin product-price {

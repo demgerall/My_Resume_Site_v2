@@ -1,7 +1,12 @@
 import React from 'react';
 
 import styles from './HomePage.module.scss';
+import { HelloSection } from '@/widgets';
 
 export const HomePage = () => {
-    return <div>Home</div>;
+    return (
+        <main>
+            <HelloSection />
+        </main>
+    );
 };

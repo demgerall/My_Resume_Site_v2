@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
 
-        @include mixins.logo_text;
+        @include mixins.logo-text;
 
         &__primary {
             color: var(--color-primary);
@@ -29,7 +29,7 @@
         &__small {
             margin-left: 8px;
 
-            @include mixins.logo_text__small;
+            @include mixins.logo-text__small;
         }
     }
 

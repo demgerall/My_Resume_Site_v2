@@ -3,6 +3,8 @@ html[data-theme='dark'] {
     --text-color: #ececec;
     //  Body
     --background-color: #191820;
+    // Button
+    --button-shadow-color: #ffffff52;
 }
 
 html[data-theme='light'] {
@@ -10,6 +12,8 @@ html[data-theme='light'] {
     --text-color: #191820;
     //  Body
     --background-color: #ececec;
+    // Button
+    --button-shadow-color: #00000080;
 }
 
 html {

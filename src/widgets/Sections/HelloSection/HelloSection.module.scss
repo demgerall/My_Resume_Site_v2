@@ -12,7 +12,10 @@
         padding: 0 50px;
 
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 40px;
 
         &_title {
             @include mixins.heading;
@@ -20,6 +23,10 @@
             &__primary {
                 color: var(--color-primary);
                 font-weight: var(--weight-bold);
+            }
+
+            &__underlined {
+                text-decoration: underline var(--color-primary);
             }
 
             &_cursor {
@@ -37,8 +44,113 @@
         align-items: center;
         justify-content: center;
 
+        position: relative;
+
+        &_armsImage {
+            position: absolute;
+
+            animation: armsAppearance 3s;
+        }
+
         &_mainImage {
-            animation: shimmer 7.5s infinite;
+            animation: shimmer 5s infinite;
+
+            transition: all 1s ease-in-out;
+
+            // &:hover {
+            //     scale: 1.05;
+            // }
+        }
+
+        &_logo {
+            max-width: 80px;
+            max-height: 80px;
+
+            position: absolute;
+
+            opacity: 0;
+
+            transition: all 0.3s ease-in-out;
+
+            &_reactLogo {
+                top: 0;
+
+                transform-origin: -75% 75%;
+                transform: translateX(-125%);
+
+                &:hover {
+                    filter: drop-shadow(0px 0px 20px #00d9ffab);
+                }
+            }
+            &_viteLogo {
+                top: 0;
+
+                transform-origin: 175% 75%;
+                transform: translateX(125%);
+
+                &:hover {
+                    filter: drop-shadow(-10px -10px 10px #46c8ff4d)
+                        drop-shadow(10px 10px 10px #916dfe4d)
+                        drop-shadow(0px 10px 10px #be31fe4d);
+                }
+            }
+            &_reduxLogo {
+                top: 15%;
+
+                transform-origin: 375% 75%;
+                transform: translateX(350%);
+
+                &:hover {
+                    filter: drop-shadow(0px 0px 20px #7848c0a0);
+                }
+            }
+            &_typescriptLogo {
+                top: 15%;
+
+                transform-origin: -325% 50%;
+                transform: translateX(-350%);
+
+                &:hover {
+                    filter: drop-shadow(0px -10px 20px #007ad0a0)
+                        drop-shadow(0px 10px 20px #ffffffa0);
+                }
+            }
+            &_reactRouterLogo {
+                top: 50%;
+
+                transform-origin: -325% 50%;
+                transform: translateX(-350%);
+
+                &:hover {
+                    filter: drop-shadow(0px -10px 20px #000000a0)
+                        drop-shadow(0px 10px 20px #f44251a0);
+                }
+            }
+            &_scssLogo {
+                top: 47%;
+
+                transform-origin: 375% 75%;
+                transform: translateX(350%);
+
+                &:hover {
+                    filter: drop-shadow(0px 0px 20px #ce679ba0);
+                }
+            }
+
+            &__show {
+                opacity: 1;
+
+                animation: logoAppearance 2s;
+            }
+
+            &__rotating {
+                &__right {
+                    animation: logoRotatingAndScalingLeft 30s infinite;
+                }
+                &__left {
+                    animation: logoRotatingAndScalingRight 30s infinite;
+                }
+            }
         }
     }
 }
@@ -62,5 +174,66 @@
     }
     100% {
         filter: drop-shadow(0px 0px 50px var(--color-primary-transparent95));
+    }
+}
+
+@keyframes armsAppearance {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes logoAppearance {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes logoRotatingAndScalingRight {
+    from,
+    to {
+        rotate: 0deg;
+        scale: 1;
+    }
+    25% {
+        scale: 0.75;
+        rotate: 45deg;
+    }
+    50% {
+        scale: 0.65;
+    }
+    75% {
+        scale: 0.75;
+        rotate: -45deg;
+    }
+}
+@keyframes logoRotatingAndScalingLeft {
+    from,
+    to {
+        rotate: 0deg;
+    }
+    25% {
+        scale: 0.75;
+        rotate: -45deg;
+    }
+    50% {
+        scale: 0.65;
+    }
+    75% {
+        scale: 0.75;
+        rotate: 45deg;
     }
 }

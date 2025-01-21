@@ -8,9 +8,9 @@
     border: 2px solid transparent;
     border-radius: 22px;
 
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 4px 8px 0px var(--button-shadow-color);
+    -moz-box-shadow: 4px 4px 8px 0px var(--button-shadow-color);
+    box-shadow: 4px 4px 8px 0px var(--button-shadow-color);
 
     transition: border-color 0.3s ease-in-out;
 

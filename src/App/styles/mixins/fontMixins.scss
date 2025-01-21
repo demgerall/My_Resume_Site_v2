@@ -1,12 +1,12 @@
 @use './../variables/globals';
 
-@mixin logo_text {
+@mixin logo-text {
     font-family: var(--font-montserrat);
     font-size: var(--font-size-logo-text);
     font-weight: var(--weight-bold);
     letter-spacing: var(--letter-spacing);
 }
-@mixin logo_text__small {
+@mixin logo-text__small {
     font-family: var(--font-montserrat);
     font-size: var(--font-size-logo-text__small);
     font-weight: var(--weight-regular);
@@ -27,11 +27,11 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin product-price {
+@mixin button-text {
     font-family: var(--font-montserrat);
-    font-size: var(--font-size-product-price);
-    font-weight: var(--weight-extrabold);
-    letter-spacing: var(--letter-spacing-01);
+    font-size: var(--font-size-button-text);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing);
 }
 
 @mixin product-price-old {

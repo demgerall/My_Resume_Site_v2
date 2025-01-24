@@ -34,11 +34,11 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin product-price-old {
+@mixin skill-card-text {
     font-family: var(--font-montserrat);
-    font-size: var(--font-size-product-price-old);
-    font-weight: var(--weight-semibold);
-    letter-spacing: var(--letter-spacing-0);
+    font-size: var(--font-size-skill-card-text);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
 }
 
 @mixin description {

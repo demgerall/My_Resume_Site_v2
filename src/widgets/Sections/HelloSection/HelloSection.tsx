@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
-import { Button } from '@/shared/ui/Buttons';
 import { TextTyper } from '@/shared/ui/TextTyper';
 import LOTOS_MAN from '@/shared/assets/images/LotosMan.png';
 import LOTOS_MAN_ARMS from '@/shared/assets/images/LotosManArms.png';
 
 import styles from './HelloSection.module.scss';
+import { HashLink } from 'react-router-hash-link';
 
 interface HelloSectionProps {
     className?: string;
@@ -17,30 +17,32 @@ export const HelloSection = (props: HelloSectionProps) => {
 
     const [showLogos, setShowLogos] = useState(false);
     const [startLogosRotating, setStartLogosRotating] = useState(false);
-    const [showButton, setShowButton] = useState(false);
+    const [showLinks, setShowLinks] = useState(false);
 
     const TYPED_TEXT =
         'I am a Frontend Developer. Thank you for your interest.';
     const TYPING_DELAY = 100;
 
-    const showLogosFunction = () => {
-        setShowLogos(true);
-    };
-    const startLogosRotatingAndScalingFunction = () => {
-        setStartLogosRotating(true);
-    };
-    const showButtonFunction = () => {
-        setShowButton(true);
-    };
-
     useEffect(() => {
-        setTimeout(showLogosFunction, 3000);
-        setTimeout(startLogosRotatingAndScalingFunction, 5000);
-        setTimeout(showButtonFunction, TYPING_DELAY * (TYPED_TEXT.length + 5));
+        setTimeout(() => {
+            setShowLogos(true);
+        }, 3000);
+        setTimeout(() => {
+            setStartLogosRotating(true);
+        }, 5000);
+        setTimeout(
+            () => {
+                setShowLinks(true);
+            },
+            TYPING_DELAY * TYPED_TEXT.length + 500,
+        );
     }, []);
 
     return (
-        <section className={classNames(styles.helloSection, [className])}>
+        <section
+            className={classNames(styles.helloSection, [className])}
+            id="about"
+        >
             <div className={styles.helloSection_textBlock}>
                 <h1 className={styles.helloSection_textBlock_title}>
                     <span
@@ -66,7 +68,23 @@ export const HelloSection = (props: HelloSectionProps) => {
                         |
                     </span>
                 </h1>
-                <Button visibility={showButton}>contact</Button>
+                <div
+                    className={classNames(
+                        styles.helloSection_textBlock_linksBlock,
+                        showLinks
+                            ? styles.helloSection_textBlock_linksBlock__show
+                            : '',
+                    )}
+                >
+                    <HashLink
+                        className={
+                            styles.helloSection_textBlock_linksBlock_contactLink
+                        }
+                        to={'/#contacts'}
+                    >
+                        Contact
+                    </HashLink>
+                </div>
             </div>
             <div className={styles.helloSection_imageBlock}>
                 <img

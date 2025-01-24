@@ -7,14 +7,21 @@
 
     position: sticky;
     top: 0;
+    z-index: 101;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-color);
+
+    transition: all 0.3s ease-in-out;
+
+    &__scrolled {
+        -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+        -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+        box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    }
 
     &_logo_link {
         display: flex;

@@ -4,7 +4,7 @@ html[data-theme='dark'] {
     //  Body
     --background-color: #191820;
     // Button
-    --button-shadow-color: #ffffff52;
+    --shadow-color: #000000ca;
 }
 
 html[data-theme='light'] {
@@ -13,7 +13,7 @@ html[data-theme='light'] {
     //  Body
     --background-color: #ececec;
     // Button
-    --button-shadow-color: #00000080;
+    --shadow-color: #00000036;
 }
 
 html {

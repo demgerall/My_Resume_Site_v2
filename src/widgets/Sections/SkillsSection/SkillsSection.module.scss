@@ -1,0 +1,41 @@
+@use '@/App/styles/mixins/fontMixins' as mixins;
+
+.skillsSection {
+    width: 100%;
+    padding: 2vw 12vw;
+
+    display: flex;
+    gap: 48px;
+
+    opacity: 0;
+
+    transition: opacity 1s ease-in-out;
+
+    &__show {
+        opacity: 1;
+    }
+
+    &_hardSkills,
+    &_softSkills {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &_title {
+            @include mixins.heading;
+            color: var(--text-color);
+
+            &__primary {
+                color: var(--color-primary);
+            }
+        }
+
+        &_skillCardsBox {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}

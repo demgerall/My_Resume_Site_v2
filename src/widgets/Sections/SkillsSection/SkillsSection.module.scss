@@ -2,18 +2,12 @@
 
 .skillsSection {
     width: 100%;
-    padding: 2vw 12vw;
+    padding: 5vh 12vw;
 
     display: flex;
     gap: 48px;
 
-    opacity: 0;
-
-    transition: opacity 1s ease-in-out;
-
-    &__show {
-        opacity: 1;
-    }
+    transition: all 0.3s ease-in-out;
 
     &_hardSkills,
     &_softSkills {

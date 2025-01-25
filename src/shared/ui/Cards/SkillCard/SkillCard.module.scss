@@ -18,20 +18,12 @@
     -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
     box-shadow: 4px 4px 8px 0px var(--shadow-color);
 
-    opacity: 0;
-    transform: translateX(64px);
-
     transition: all 0.3s ease-in-out;
 
     &:hover {
         -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
-    }
-
-    &__show {
-        opacity: 1;
-        transform: translateX(0);
     }
 
     &_mark {

@@ -1,11 +1,14 @@
 @use 'scss-reset/reset';
 @use 'variables/globals';
 
+html {
+    background-color: var(--background-color);
+}
+
 body {
     box-sizing: border-box;
     overflow-x: hidden;
 
-    background-color: var(--background-color);
     color: var(--text-color);
 
     transition: background-color 0.3s ease-in-out;

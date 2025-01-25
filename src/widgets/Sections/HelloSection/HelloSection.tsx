@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
+import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
 import { TextTyper } from '@/shared/ui/TextTyper';
@@ -6,7 +8,6 @@ import LOTOS_MAN from '@/shared/assets/images/LotosMan.png';
 import LOTOS_MAN_ARMS from '@/shared/assets/images/LotosManArms.png';
 
 import styles from './HelloSection.module.scss';
-import { HashLink } from 'react-router-hash-link';
 
 interface HelloSectionProps {
     className?: string;
@@ -38,12 +39,29 @@ export const HelloSection = (props: HelloSectionProps) => {
         );
     }, []);
 
+    const textAnimationVariants = {
+        hidden: {
+            x: -64,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1,
+        },
+    };
+
     return (
-        <section
+        <motion.section
             className={classNames(styles.helloSection, [className])}
             id="about"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.2, once: true }}
         >
-            <div className={styles.helloSection_textBlock}>
+            <motion.div
+                className={styles.helloSection_textBlock}
+                variants={textAnimationVariants}
+            >
                 <h1 className={styles.helloSection_textBlock_title}>
                     <span
                         className={styles.helloSection_textBlock_title__primary}
@@ -85,7 +103,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                         Contact
                     </HashLink>
                 </div>
-            </div>
+            </motion.div>
             <div className={styles.helloSection_imageBlock}>
                 <img
                     className={styles.helloSection_imageBlock_armsImage}
@@ -192,6 +210,6 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
             </div>
-        </section>
+        </motion.section>
     );
 };

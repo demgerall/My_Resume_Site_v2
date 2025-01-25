@@ -2,12 +2,14 @@
 
 .helloSection {
     width: 100%;
-    padding: 2vw 12vw;
+    padding: 5vh 12vw;
 
     display: flex;
     align-items: center;
 
     gap: 5vw;
+
+    transition: all 0.3s ease-in-out;
 
     &_textBlock {
         width: 50%;

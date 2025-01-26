@@ -41,25 +41,25 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin description {
+@mixin date {
     font-family: var(--font-montserrat);
-    font-size: var(--font-size-text-description);
-    font-weight: var(--weight-regular);
-    letter-spacing: var(--letter-spacing--02);
+    font-size: var(--font-size-date);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing);
 }
 
-@mixin text-menu {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-menu);
-    font-weight: var(--weight-medium);
-    letter-spacing: var(--letter-spacing-0025);
+@mixin project-name {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-project-name);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
 }
 
-@mixin text-product-description {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-product-description);
+@mixin project-description {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-project-description);
     font-weight: var(--weight-regular);
-    letter-spacing: var(--letter-spacing-0075);
+    letter-spacing: var(--letter-spacing);
 }
 
 @mixin product-card-title {

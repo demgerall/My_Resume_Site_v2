@@ -18,4 +18,30 @@
             color: var(--color-primary);
         }
     }
+
+    &_projectsBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+
+        &_showMoreLink {
+            padding: 12px 24px;
+
+            @include mixins.link;
+
+            border: 2px solid transparent;
+            border-radius: 22px;
+
+            -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+            -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
+            box-shadow: 4px 4px 8px 0px var(--shadow-color);
+
+            transition: border-color 0.3s ease-in-out;
+
+            &:hover {
+                border: 2px solid var(--color-primary);
+            }
+        }
+    }
 }

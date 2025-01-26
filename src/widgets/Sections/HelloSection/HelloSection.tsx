@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
@@ -102,6 +103,14 @@ export const HelloSection = (props: HelloSectionProps) => {
                     >
                         Contact
                     </HashLink>
+                    <Link
+                        to={'/projects'}
+                        className={
+                            styles.helloSection_textBlock_linksBlock_showMoreLink
+                        }
+                    >
+                        All my projects
+                    </Link>
                 </div>
             </motion.div>
             <div className={styles.helloSection_imageBlock}>

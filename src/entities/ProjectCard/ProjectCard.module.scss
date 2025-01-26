@@ -1,0 +1,148 @@
+@use '@/App/styles/mixins/fontMixins' as mixins;
+
+.projectCard {
+    width: 100%;
+    padding: 32px 32px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 32px;
+
+    border-radius: 24px;
+
+    -webkit-box-shadow: var(--shadow-card);
+    -moz-box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-card);
+
+    transition: all 0.3s ease-in-out;
+
+    &_imageBlock {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        border-radius: 24px;
+
+        cursor: pointer;
+
+        transition: scale 0.3s ease-in-out;
+
+        &:hover {
+            scale: 1.02;
+        }
+    }
+
+    &_textBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 24px;
+
+        &_date {
+            padding: 12px 20px;
+
+            @include mixins.date;
+            color: var(--color-primary);
+
+            border-radius: 24px;
+
+            box-shadow:
+                #ffffff1a -2px -2px 4px 0px inset,
+                #00000080 2px 2px 4px 0px inset;
+        }
+
+        &_name {
+            @include mixins.project-name;
+
+            display: flex;
+            gap: 4px;
+            align-items: start;
+
+            cursor: pointer;
+
+            transition: color 0.3s ease-in-out;
+
+            &::after {
+                content: '';
+                height: 12px;
+                width: 12px;
+                background-image: url('src/shared/assets/icons/link.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+
+        &_githubLinks {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            &_githubRepositoryLink {
+                height: 64px;
+                width: 64px;
+                padding: 12px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                box-shadow:
+                    #ffffff1a -2px -2px 4px 0px inset,
+                    #00000059 2px 2px 4px 0px inset;
+
+                border-radius: 24px;
+                border: 2px solid transparent;
+
+                transition: border 0.3s ease-in-out;
+
+                &:hover {
+                    border: 2px solid var(--color-primary);
+                }
+
+                html[data-theme='light'] &_img {
+                    filter: invert(100%);
+                }
+            }
+
+            &_githubPagesLink {
+                height: 64px;
+                padding: 12px 24px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-weight: var(--weight-bold);
+
+                box-shadow:
+                    #ffffff1a -2px -2px 4px 0px inset,
+                    #00000059 2px 2px 4px 0px inset;
+
+                border-radius: 24px;
+                border: 2px solid transparent;
+
+                transition: border 0.3s ease-in-out;
+
+                &:hover {
+                    border: 2px solid var(--color-primary);
+                }
+            }
+        }
+
+        &_description {
+            @include mixins.project-description;
+        }
+
+        &_usedDevToolsBlock {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}

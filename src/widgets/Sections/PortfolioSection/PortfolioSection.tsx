@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { delay, motion } from 'framer-motion';
 import classNames from 'classnames';
 
+import { ProjectCardsList } from '@/features';
+
 import styles from './PortfolioSection.module.scss';
-import { ProjectCardsList } from '@/entities';
 
 interface PortfolioSectionProps {
     className?: string;
@@ -47,7 +49,15 @@ export const PortfolioSection = (props: PortfolioSectionProps) => {
                 custom={2}
                 variants={sectionAnimationVariants}
             >
-                <ProjectCardsList></ProjectCardsList>
+                <ProjectCardsList />
+                <Link
+                    to={'/projects'}
+                    className={
+                        styles.portfolioSection_projectsBlock_showMoreLink
+                    }
+                >
+                    All my projects
+                </Link>
             </motion.div>
         </motion.section>
     );

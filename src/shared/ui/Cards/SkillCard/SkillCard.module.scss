@@ -14,9 +14,9 @@
 
     border-radius: 24px;
 
-    -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
-    box-shadow: 4px 4px 8px 0px var(--shadow-color);
+    -webkit-box-shadow: var(--shadow-card);
+    -moz-box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-card);
 
     transition: all 0.3s ease-in-out;
 

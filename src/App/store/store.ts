@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { projectsSlice } from '@/entities';
+import { projectsSlice } from '@/features';
 
 export const store = configureStore({
     reducer: {

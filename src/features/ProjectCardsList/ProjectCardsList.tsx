@@ -37,10 +37,10 @@ export const ProjectCardsList = (props: ProjectCardsListProps) => {
 
     return (
         <motion.ul
+            className={classNames(styles.projectCardsList, [className])}
             initial="hidden"
             whileInView="visible"
             viewport={{ amount: 0.2, once: true }}
-            className={classNames(styles.projectCardsList, [className])}
         >
             {projects.slice(0, 3).map((project, index) => {
                 return (

@@ -1,0 +1,33 @@
+.worksCardsList {
+    &_workBlock {
+        padding-left: 32px;
+
+        display: flex;
+        align-items: center;
+        gap: 64px;
+
+        &_circleMark {
+            width: 64px;
+            height: 64px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            -webkit-box-shadow: var(--shadow-card);
+            -moz-box-shadow: var(--shadow-card);
+            box-shadow: var(--shadow-card);
+
+            &_innerCircle {
+                width: 16px;
+                height: 16px;
+
+                background-color: var(--color-primary);
+
+                border-radius: 50%;
+            }
+        }
+    }
+}

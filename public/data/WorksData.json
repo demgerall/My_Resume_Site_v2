@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Shelfy Team (Startup)",
+        "position": "Frontend Developer (Team Lead)",
+        "workURL": "",
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "scss",
+            "adobe-photoshop",
+            "figma"
+        ],
+        "description": "We are a young team working on a platform for discovering, tracking, and managing information about multimedia products such as games, movies, series, and books. Our goal is to create a user-friendly tool that enables users to keep track of the content they’ve watched, read, or completed, discover new products through personalized recommendations, and interact with friends via social features (activity feed, friend system, collaborative product selection, etc.).",
+        "dateStart": "Sep 2024",
+        "dateEnd": "Present"
+    }
+]

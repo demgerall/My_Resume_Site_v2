@@ -145,4 +145,10 @@
             gap: 12px;
         }
     }
+
+    &:hover {
+        -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+    }
 }

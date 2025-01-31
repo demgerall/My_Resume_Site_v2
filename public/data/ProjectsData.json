@@ -3,15 +3,18 @@
         "name": "My Resume Site",
         "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
         "githubPagesURL": "",
-        "images": ["public/images/My_Resume_Site/mainPage.png"],
+        "images": ["/images/My_Resume_Site/mainPage.png"],
         "usedDevTools": [
             "vite",
+            "html",
+            "css",
             "typescript",
             "react",
             "react-router",
             "redux",
             "scss",
-            "framer-motion"
+            "framer-motion",
+            "adobe-photoshop"
         ],
         "description": "The site is a portfolio of frontend developer Demid Chebakov. It describes his hard and soft skills, as well as presents demonstration projects developed using various tools. The portfolio highlights the team's work experience, attention to detail, and commitment to continuous professional growth, thus demonstrating the developer's professionalism.",
         "date": "Jan 2025"
@@ -21,13 +24,15 @@
         "githubRepositoryURL": "https://github.com/demgerall/The_Alpha_Ecosystem_TestWork",
         "githubPagesURL": "https://demgerall.github.io/The_Alpha_Ecosystem_TestWork/#/products",
         "images": [
-            "public/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
-            "public/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
-            "public/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
-            "public/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
+            "/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
+            "/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
+            "/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
+            "/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
         ],
         "usedDevTools": [
             "vite",
+            "html",
+            "css",
             "typescript",
             "react",
             "react-router",
@@ -39,13 +44,13 @@
         "date": "Dec 2024"
     },
     {
-        "name": "My Resume Site",
-        "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
-        "githubPagesURL": "",
-        "images": [],
-        "usedDevTools": [],
-        "description": "",
-        "date": ""
+        "name": "GoszakazGroup TestWork",
+        "githubRepositoryURL": "https://github.com/demgerall/GoszakazGroupMainPage",
+        "githubPagesURL": "https://demgerall.github.io/GoszakazGroupMainPage/",
+        "images": ["/images/GoszakazGroupMainPage/mainPage.png"],
+        "usedDevTools": ["html", "css", "scss", "figma"],
+        "description": "A demo web page created using html and css. Displays a list of news items. The main focus is on the visual representation of the main page, which contains blocks with various articles.",
+        "date": "Nov 2024"
     },
     {
         "name": "My Resume Site",

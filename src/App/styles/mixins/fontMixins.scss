@@ -62,11 +62,11 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin product-card-title {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-product-card-title);
-    font-weight: var(--weight-semibold);
-    letter-spacing: var(--letter-spacing-0025);
+@mixin position {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-position);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
 }
 
 @mixin text-category {

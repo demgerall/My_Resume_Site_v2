@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { projectsSlice } from '@/features';
+import { projectsSlice, worksSlice } from '@/features';
 
 export const store = configureStore({
     reducer: {
         projects: projectsSlice.reducer,
+        works: worksSlice.reducer,
     },
     devTools: true,
 });

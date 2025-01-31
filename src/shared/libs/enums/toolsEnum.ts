@@ -7,4 +7,8 @@ export enum toolsEnum {
     react_hook_form = 'react-hook-form',
     scss = 'scss',
     framer_motion = 'framer-motion',
+    css = 'css',
+    html = 'html',
+    figma = 'figma',
+    adobe_photoshop = 'adobe-photoshop',
 }

@@ -1,0 +1,84 @@
+@use '@/App/styles/mixins/fontMixins' as mixins;
+
+.workCard {
+    width: 100%;
+    padding: 32px 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+
+    border-radius: 24px;
+
+    -webkit-box-shadow: var(--shadow-card);
+    -moz-box-shadow: var(--shadow-card);
+    box-shadow: var(--shadow-card);
+
+    transition: all 0.3s ease-in-out;
+
+    &_date {
+        padding: 12px 20px;
+
+        @include mixins.date;
+        color: var(--color-primary);
+
+        border-radius: 24px;
+
+        box-shadow:
+            #ffffff1a -2px -2px 4px 0px inset,
+            #00000080 2px 2px 4px 0px inset;
+    }
+
+    &_company {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &_name {
+            @include mixins.project-name;
+
+            display: flex;
+            gap: 4px;
+            align-items: start;
+
+            cursor: pointer;
+
+            transition: color 0.3s ease-in-out;
+
+            &::after {
+                content: '';
+                height: 12px;
+                width: 12px;
+                background-image: url('src/shared/assets/icons/link.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+        &_position {
+            @include mixins.position;
+            color: var(--color-primary);
+        }
+    }
+
+    &_description {
+        @include mixins.project-description;
+    }
+
+    &_usedDevToolsBlock {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+    }
+}

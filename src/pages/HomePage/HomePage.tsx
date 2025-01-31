@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { HelloSection, PortfolioSection, SkillsSection } from '@/widgets';
+import {
+    ContactsSection,
+    HelloSection,
+    PortfolioSection,
+    SkillsSection,
+    WorkExperienceSection,
+} from '@/widgets';
 
 import styles from './HomePage.module.scss';
 
@@ -10,6 +16,8 @@ export const HomePage = () => {
             <HelloSection />
             <SkillsSection />
             <PortfolioSection />
+            <WorkExperienceSection />
+            <ContactsSection />
         </main>
     );
 };

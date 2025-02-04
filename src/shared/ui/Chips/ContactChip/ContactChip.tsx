@@ -23,7 +23,7 @@ export const ContactChip = (props: ContactChipProps) => {
         >
             <img
                 className={styles.contactChip_img}
-                src={`src/shared/assets/icons/${contact}.svg`}
+                src={`/icons/${contact}.svg`}
                 alt={contact}
                 title={contact}
                 draggable={false}

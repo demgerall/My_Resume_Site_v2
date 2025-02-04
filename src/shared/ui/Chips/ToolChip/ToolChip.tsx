@@ -17,7 +17,7 @@ export const ToolChip = (props: ToolChipProps) => {
         <div className={classNames(styles.toolChip, [className])}>
             <img
                 className={styles.toolChip_img}
-                src={`src/shared/assets/icons/${tool}.svg`}
+                src={`/icons/${tool}.svg`}
                 alt={tool}
                 title={tool}
                 draggable={false}

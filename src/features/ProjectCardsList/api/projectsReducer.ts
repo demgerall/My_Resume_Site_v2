@@ -7,7 +7,9 @@ export const getProjects = createAsyncThunk(
     'projects/getProjects',
     async (__, thunkApi) => {
         try {
-            const response = await axios.get('/data/ProjectsData.json');
+            const response = await axios.get(
+                '/My_Resume_Site_v2/data/ProjectsData.json',
+            );
             return response.data;
         } catch (error) {
             console.log(error);

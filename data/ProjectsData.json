@@ -3,7 +3,7 @@
         "name": "My Resume Site",
         "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
         "githubPagesURL": "",
-        "images": ["/images/My_Resume_Site/mainPage.png"],
+        "images": ["/My_Resume_Site_v2/images/My_Resume_Site/mainPage.png"],
         "usedDevTools": [
             "vite",
             "html",
@@ -24,10 +24,10 @@
         "githubRepositoryURL": "https://github.com/demgerall/The_Alpha_Ecosystem_TestWork",
         "githubPagesURL": "https://demgerall.github.io/The_Alpha_Ecosystem_TestWork/#/products",
         "images": [
-            "/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
-            "/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
-            "/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
-            "/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
         ],
         "usedDevTools": [
             "vite",
@@ -47,7 +47,9 @@
         "name": "GoszakazGroup TestWork",
         "githubRepositoryURL": "https://github.com/demgerall/GoszakazGroupMainPage",
         "githubPagesURL": "https://demgerall.github.io/GoszakazGroupMainPage/",
-        "images": ["/images/GoszakazGroupMainPage/mainPage.png"],
+        "images": [
+            "/My_Resume_Site_v2/images/GoszakazGroupMainPage/mainPage.png"
+        ],
         "usedDevTools": ["html", "css", "scss", "figma"],
         "description": "A demo web page created using html and css. Displays a list of news items. The main focus is on the visual representation of the main page, which contains blocks with various articles.",
         "date": "Nov 2024"

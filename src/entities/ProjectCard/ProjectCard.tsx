@@ -34,7 +34,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <div className={styles.projectCard_textBlock}>
                 <p className={styles.projectCard_textBlock_date}>{date}</p>
                 <Link
-                    to={`/projects/${name}`}
+                    to={`/My_Resume_Site_v2/projects/${name}`}
                     className={styles.projectCard_textBlock_name}
                     title={name}
                 >
@@ -52,7 +52,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
                             className={
                                 styles.projectCard_textBlock_githubLinks_githubRepositoryLink_img
                             }
-                            src="src/shared/assets/icons/github.svg"
+                            src="/My_Resume_Site_v2/icons/github.svg"
                             alt=""
                         />
                     </Link>

@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr';
 import { resolve } from 'path';
 
 export default defineConfig({
+    base: '"/My_Resume_Site_v2/',
     plugins: [
         react(),
         svgr({

@@ -18,7 +18,7 @@ export const NavMenu = (props: NavMenuProps) => {
                     <HashLink
                         smooth
                         className={styles.navMenu_wrapper_item_link}
-                        to={'/#skills'}
+                        to={'/My_Resume_Site_v2/#skills'}
                     >
                         Skills
                     </HashLink>
@@ -27,7 +27,7 @@ export const NavMenu = (props: NavMenuProps) => {
                     <HashLink
                         smooth
                         className={styles.navMenu_wrapper_item_link}
-                        to={'/#projects'}
+                        to={'/My_Resume_Site_v2/#projects'}
                     >
                         My Projects
                     </HashLink>
@@ -36,7 +36,7 @@ export const NavMenu = (props: NavMenuProps) => {
                     <HashLink
                         smooth
                         className={styles.navMenu_wrapper_item_link}
-                        to={'/#work_experience'}
+                        to={'/My_Resume_Site_v2/#work_experience'}
                     >
                         Work Experience
                     </HashLink>
@@ -45,7 +45,7 @@ export const NavMenu = (props: NavMenuProps) => {
                     <HashLink
                         smooth
                         className={styles.navMenu_wrapper_item_link}
-                        to={'/#contacts'}
+                        to={'/My_Resume_Site_v2/#contacts'}
                     >
                         Contacts
                     </HashLink>

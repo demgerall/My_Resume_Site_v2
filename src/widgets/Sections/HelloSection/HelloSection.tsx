@@ -99,12 +99,12 @@ export const HelloSection = (props: HelloSectionProps) => {
                         className={
                             styles.helloSection_textBlock_linksBlock_contactLink
                         }
-                        to={'/#contacts'}
+                        to={'/My_Resume_Site_v2/#contacts'}
                     >
                         Contact
                     </HashLink>
                     <Link
-                        to={'/projects'}
+                        to={'/My_Resume_Site_v2/projects'}
                         className={
                             styles.helloSection_textBlock_linksBlock_showMoreLink
                         }
@@ -129,7 +129,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                 />
 
                 <img
-                    src={'./src/shared/assets/icons/react.svg'}
+                    src={'/My_Resume_Site_v2/icons/react.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_reactLogo,
@@ -144,7 +144,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
                 <img
-                    src={'./src/shared/assets/icons/vite.svg'}
+                    src={'/My_Resume_Site_v2/icons/vite.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_viteLogo,
@@ -159,7 +159,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
                 <img
-                    src={'./src/shared/assets/icons/redux.svg'}
+                    src={'/My_Resume_Site_v2/icons/redux.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_reduxLogo,
@@ -174,7 +174,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
                 <img
-                    src={'./src/shared/assets/icons/typescript.svg'}
+                    src={'/My_Resume_Site_v2/icons/typescript.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_typescriptLogo,
@@ -189,7 +189,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
                 <img
-                    src={'./src/shared/assets/icons/react-router.svg'}
+                    src={'/My_Resume_Site_v2/icons/react-router.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_reactRouterLogo,
@@ -204,7 +204,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     alt=""
                 />
                 <img
-                    src={'./src/shared/assets/icons/scss.svg'}
+                    src={'/My_Resume_Site_v2/icons/scss.svg'}
                     className={classNames(
                         styles.helloSection_imageBlock_logo,
                         styles.helloSection_imageBlock_logo_scssLogo,

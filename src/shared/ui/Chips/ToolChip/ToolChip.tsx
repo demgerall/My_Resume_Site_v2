@@ -17,7 +17,7 @@ export const ToolChip = (props: ToolChipProps) => {
         <div className={classNames(styles.toolChip, [className])}>
             <img
                 className={styles.toolChip_img}
-                src={`/icons/${tool}.svg`}
+                src={`/My_Resume_Site_v2/icons/${tool}.svg`}
                 alt={tool}
                 title={tool}
                 draggable={false}

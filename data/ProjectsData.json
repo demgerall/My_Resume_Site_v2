@@ -2,7 +2,7 @@
     {
         "name": "My Resume Site",
         "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
-        "githubPagesURL": "",
+        "githubPagesURL": "https://demgerall.github.io/My_Resume_Site_v2",
         "images": ["/My_Resume_Site_v2/images/My_Resume_Site/mainPage.png"],
         "usedDevTools": [
             "vite",

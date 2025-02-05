@@ -1,0 +1,13 @@
+.button {
+    padding: 10px;
+
+    &:active {
+        scale: 1.2;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            scale: 1.2;
+        }
+    }
+}

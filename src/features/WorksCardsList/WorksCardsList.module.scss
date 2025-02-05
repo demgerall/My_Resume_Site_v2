@@ -6,6 +6,13 @@
         align-items: center;
         gap: 64px;
 
+        @media screen and (max-width: 450px) {
+            padding-left: 0;
+
+            flex-direction: column;
+            gap: 16px;
+        }
+
         &_circleMark {
             width: 64px;
             height: 64px;
@@ -20,6 +27,11 @@
             -moz-box-shadow: var(--shadow-card);
             box-shadow: var(--shadow-card);
 
+            @media screen and (max-width: 450px) {
+                width: 32px;
+                height: 32px;
+            }
+
             &_innerCircle {
                 width: 16px;
                 height: 16px;
@@ -27,6 +39,11 @@
                 background-color: var(--color-primary);
 
                 border-radius: 50%;
+
+                @media screen and (max-width: 450px) {
+                    width: 12px;
+                    height: 12px;
+                }
             }
         }
     }

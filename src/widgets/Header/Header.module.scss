@@ -17,6 +17,11 @@
 
     transition: all 0.3s ease-in-out;
 
+    //  Mobile
+    @media screen and (max-width: 450px) {
+        height: 70px;
+    }
+
     &__scrolled {
         -webkit-box-shadow: 4px 4px 8px 0px var(--shadow-color);
         -moz-box-shadow: 4px 4px 8px 0px var(--shadow-color);
@@ -29,6 +34,11 @@
 
         @include mixins.logo-text;
 
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            @include mixins.logo-text-mobile;
+        }
+
         &__primary {
             color: var(--color-primary);
         }
@@ -37,6 +47,11 @@
             margin-left: 8px;
 
             @include mixins.logo-text__small;
+
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                @include mixins.logo-text-mobile__small;
+            }
         }
     }
 
@@ -44,5 +59,10 @@
         display: flex;
         align-items: center;
         gap: 20px;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            gap: 12px;
+        }
     }
 }

@@ -2,9 +2,14 @@
 
 .contactsSection {
     width: 100%;
-    padding: 5vh 12vw;
+    padding: 5vh 10vw;
 
     transition: all 0.3s ease-in-out;
+
+    //  Mobile
+    @media screen and (max-width: 450px) {
+        padding: 3vh 10vw;
+    }
 
     &_contactBlock {
         height: 350px;
@@ -20,6 +25,15 @@
         -moz-box-shadow: var(--shadow-card);
         box-shadow: var(--shadow-card);
 
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            height: auto;
+            padding: 32px;
+
+            flex-direction: column;
+            gap: 24px;
+        }
+
         &_textBlock {
             height: 100%;
 
@@ -30,12 +44,35 @@
             flex-basis: 40%;
             flex-shrink: 0;
 
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                justify-content: start;
+                gap: 12px;
+
+                flex-basis: auto;
+                flex-shrink: 1;
+            }
+
             &_title {
                 @include mixins.heading;
                 color: var(--text-color);
 
+                //  Mobile
+                @media screen and (max-width: 450px) {
+                    @include mixins.heading-mobile;
+
+                    text-align: center;
+                }
+
                 &__primary {
                     color: var(--color-primary);
+                }
+            }
+
+            &_text {
+                //  Mobile
+                @media screen and (max-width: 450px) {
+                    text-align: center;
                 }
             }
         }
@@ -48,14 +85,18 @@
             justify-content: space-between;
             align-items: flex-end;
 
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+
             &_contactLinks {
                 display: flex;
                 align-items: center;
 
                 gap: 16px;
-            }
-
-            &_author {
             }
         }
     }

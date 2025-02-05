@@ -1,5 +1,7 @@
 @use './../variables/globals';
 
+//  Desktop
+
 @mixin logo-text {
     font-family: var(--font-montserrat);
     font-size: var(--font-size-logo-text);
@@ -69,30 +71,62 @@
     letter-spacing: var(--letter-spacing);
 }
 
-@mixin text-category {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-category);
-    font-weight: var(--weight-medium);
-    letter-spacing: var(--letter-spacing-0025);
-}
+//  Mobile
 
-@mixin text-label {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-label);
-    font-weight: var(--weight-regular);
-    letter-spacing: var(--letter-spacing-0025);
-}
-
-@mixin text-button {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-button);
+@mixin logo-text-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-logo-text-mobile);
     font-weight: var(--weight-bold);
-    letter-spacing: var(--letter-spacing-0025);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin logo-text-mobile__small {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-logo-text-mobile__small);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin link-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-link-mobile);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin heading-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-heading-mobile);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin skill-card-text-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-skill-card-text-mobile);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+@mixin date-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-date-mobile);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--letter-spacing);
 }
 
-@mixin text-data {
-    font-family: var(--font-roboto);
-    font-size: var(--font-size-text-data);
+@mixin project-name-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-project-name-mobile);
     font-weight: var(--weight-regular);
-    letter-spacing: var(--letter-spacing-0025);
+    letter-spacing: var(--letter-spacing);
+}
+
+@mixin project-description-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-project-description-mobile);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+
+@mixin position-mobile {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-position-mobile);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
 }

@@ -6,6 +6,7 @@
 
     --letter-spacing: 120%;
 
+    //  Desktop
     --font-size-logo-text: 28px;
     --font-size-logo-text__small: 20px;
     --font-size-link: 16px;
@@ -16,4 +17,15 @@
     --font-size-project-name: 28px;
     --font-size-project-description: 16px;
     --font-size-position: 16px;
+
+    //  Mobile
+    --font-size-logo-text-mobile: 20px;
+    --font-size-logo-text-mobile__small: 16px;
+    --font-size-link-mobile: 12px;
+    --font-size-heading-mobile: 24px;
+    --font-size-skill-card-text-mobile: 12px;
+    --font-size-date-mobile: 12px;
+    --font-size-project-name-mobile: 20px;
+    --font-size-project-description-mobile: 12px;
+    --font-size-position-mobile: 12px;
 }

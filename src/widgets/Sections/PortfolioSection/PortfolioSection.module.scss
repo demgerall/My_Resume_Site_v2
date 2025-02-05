@@ -2,7 +2,7 @@
 
 .portfolioSection {
     width: 100%;
-    padding: 5vh 12vw;
+    padding: 5vh 10vw;
 
     display: flex;
     flex-direction: column;
@@ -10,9 +10,21 @@
 
     transition: all 0.3s ease-in-out;
 
+    //  Mobile
+    @media screen and (max-width: 450px) {
+        padding: 3vh 10vw;
+
+        gap: 24px;
+    }
+
     &_title {
         @include mixins.heading;
         color: var(--text-color);
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            @include mixins.heading-mobile;
+        }
 
         &__primary {
             color: var(--color-primary);
@@ -24,6 +36,11 @@
         flex-direction: column;
         align-items: center;
         gap: 48px;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            gap: 24px;
+        }
 
         &_showMoreLink {
             padding: 12px 24px;
@@ -38,6 +55,11 @@
             box-shadow: 4px 4px 8px 0px var(--shadow-color);
 
             transition: border-color 0.3s ease-in-out;
+
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                @include mixins.link-mobile;
+            }
 
             &:hover {
                 border: 2px solid var(--color-primary);

@@ -2,7 +2,7 @@
 
 .helloSection {
     width: 100%;
-    padding: 5vh 12vw;
+    padding: 5vh 10vw;
 
     display: flex;
     align-items: center;
@@ -10,6 +10,14 @@
     gap: 5vw;
 
     transition: all 0.3s ease-in-out;
+
+    //  Mobile
+    @media screen and (max-width: 450px) {
+        padding: 3vh 10vw;
+
+        flex-direction: column;
+        gap: 5vh;
+    }
 
     &_textBlock {
         width: 50%;
@@ -20,8 +28,22 @@
         align-items: start;
         gap: 40px;
 
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            width: 100%;
+
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
         &_title {
             @include mixins.heading;
+
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                @include mixins.heading-mobile;
+            }
 
             &__primary {
                 color: var(--color-primary);
@@ -43,14 +65,18 @@
             display: flex;
             gap: 32px;
 
+            @include mixins.link;
+
             opacity: 0;
 
             transition: all 0.3s ease-in-out;
 
+            @media screen and (max-width: 450px) {
+                @include mixins.link-mobile;
+            }
+
             &_contactLink {
                 padding: 12px 24px;
-
-                @include mixins.link;
 
                 border: 2px solid transparent;
                 border-radius: 22px;
@@ -68,8 +94,6 @@
 
             &_showMoreLink {
                 padding: 12px 24px;
-
-                @include mixins.link;
 
                 border: 2px solid transparent;
                 border-radius: 22px;
@@ -100,6 +124,10 @@
 
         position: relative;
 
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
+
         &_armsImage {
             position: absolute;
 
@@ -110,10 +138,6 @@
             animation: shimmer 5s infinite;
 
             transition: all 1s ease-in-out;
-
-            // &:hover {
-            //     scale: 1.05;
-            // }
         }
 
         &_logo {

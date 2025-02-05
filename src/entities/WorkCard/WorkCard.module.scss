@@ -17,6 +17,13 @@
 
     transition: all 0.3s ease-in-out;
 
+    //  Mobile
+    @media screen and (max-width: 450px) {
+        padding: 16px 16px;
+
+        gap: 12px;
+    }
+
     &_date {
         padding: 12px 20px;
 
@@ -28,12 +35,22 @@
         box-shadow:
             #ffffff1a -2px -2px 4px 0px inset,
             #00000080 2px 2px 4px 0px inset;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            @include mixins.date-mobile;
+        }
     }
 
     &_company {
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            gap: 4px;
+        }
 
         &_name {
             @include mixins.project-name;
@@ -46,14 +63,25 @@
 
             transition: color 0.3s ease-in-out;
 
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                @include mixins.project-name-mobile;
+            }
+
             &::after {
                 content: '';
                 height: 12px;
                 width: 12px;
-                background-image: url('src/shared/assets/icons/link.svg');
+                background-image: url('/My_Resume_Site_v2/icons/link.svg');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                //  Mobile
+                @media screen and (max-width: 450px) {
+                    height: 8px;
+                    width: 8px;
+                }
             }
 
             &:hover {
@@ -63,17 +91,33 @@
         &_position {
             @include mixins.position;
             color: var(--color-primary);
+
+            //  Mobile
+            @media screen and (max-width: 450px) {
+                @include mixins.position-mobile;
+            }
         }
     }
 
     &_description {
         @include mixins.project-description;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            @include mixins.project-description-mobile;
+        }
     }
 
     &_usedDevToolsBlock {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         gap: 12px;
+
+        //  Mobile
+        @media screen and (max-width: 450px) {
+            gap: 8px;
+        }
     }
 
     &:hover {

@@ -61,8 +61,16 @@
                 @include mixins.link-mobile;
             }
 
-            &:hover {
+            //  Click
+            &:active {
                 border: 2px solid var(--color-primary);
+            }
+
+            //Hover
+            @media (hover: hover) {
+                &:hover {
+                    border: 2px solid var(--color-primary);
+                }
             }
         }
     }

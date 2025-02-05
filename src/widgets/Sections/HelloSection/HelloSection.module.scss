@@ -71,6 +71,7 @@
 
             transition: all 0.3s ease-in-out;
 
+            //  Mobile
             @media screen and (max-width: 450px) {
                 @include mixins.link-mobile;
             }
@@ -78,6 +79,8 @@
             &_contactLink {
                 padding: 12px 24px;
 
+                align-content: center;
+
                 border: 2px solid transparent;
                 border-radius: 22px;
 
@@ -87,14 +90,24 @@
 
                 transition: all 0.3s ease-in-out;
 
-                &:hover {
+                //  Click
+                &:active {
                     border: 2px solid var(--color-primary);
+                }
+
+                //  Hover
+                @media (hover: hover) {
+                    &:hover {
+                        border: 2px solid var(--color-primary);
+                    }
                 }
             }
 
             &_showMoreLink {
                 padding: 12px 24px;
 
+                align-content: center;
+
                 border: 2px solid transparent;
                 border-radius: 22px;
 
@@ -104,8 +117,16 @@
 
                 transition: all 0.3s ease-in-out;
 
-                &:hover {
+                //  Click
+                &:active {
                     border: 2px solid var(--color-primary);
+                }
+
+                //  Hover
+                @media (hover: hover) {
+                    &:hover {
+                        border: 2px solid var(--color-primary);
+                    }
                 }
             }
 
@@ -124,7 +145,10 @@
 
         position: relative;
 
+        //  Mobile
         @media screen and (max-width: 450px) {
+            width: 100%;
+
             display: none;
         }
 
@@ -156,8 +180,16 @@
                 transform-origin: -75% 75%;
                 transform: translateX(-125%);
 
-                &:hover {
+                //  Click
+                &:active {
                     filter: drop-shadow(0px 0px 20px #00d9ffab);
+                }
+
+                //  Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(0px 0px 20px #00d9ffab);
+                    }
                 }
             }
             &_viteLogo {
@@ -166,10 +198,20 @@
                 transform-origin: 175% 75%;
                 transform: translateX(125%);
 
+                //  Click
                 &:hover {
                     filter: drop-shadow(-10px -10px 10px #46c8ff4d)
                         drop-shadow(10px 10px 10px #916dfe4d)
                         drop-shadow(0px 10px 10px #be31fe4d);
+                }
+
+                //  Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(-10px -10px 10px #46c8ff4d)
+                            drop-shadow(10px 10px 10px #916dfe4d)
+                            drop-shadow(0px 10px 10px #be31fe4d);
+                    }
                 }
             }
             &_reduxLogo {
@@ -178,8 +220,16 @@
                 transform-origin: 375% 75%;
                 transform: translateX(350%);
 
-                &:hover {
+                //  Click
+                &:active {
                     filter: drop-shadow(0px 0px 20px #7848c0a0);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(0px 0px 20px #7848c0a0);
+                    }
                 }
             }
             &_typescriptLogo {
@@ -188,9 +238,18 @@
                 transform-origin: -325% 50%;
                 transform: translateX(-350%);
 
-                &:hover {
+                //  Click
+                &:active {
                     filter: drop-shadow(0px -10px 20px #007ad0a0)
                         drop-shadow(0px 10px 20px #ffffffa0);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(0px -10px 20px #007ad0a0)
+                            drop-shadow(0px 10px 20px #ffffffa0);
+                    }
                 }
             }
             &_reactRouterLogo {
@@ -199,9 +258,18 @@
                 transform-origin: -325% 50%;
                 transform: translateX(-350%);
 
-                &:hover {
+                //  Click
+                &:active {
                     filter: drop-shadow(0px -10px 20px #000000a0)
                         drop-shadow(0px 10px 20px #f44251a0);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(0px -10px 20px #000000a0)
+                            drop-shadow(0px 10px 20px #f44251a0);
+                    }
                 }
             }
             &_scssLogo {
@@ -210,8 +278,16 @@
                 transform-origin: 375% 75%;
                 transform: translateX(350%);
 
-                &:hover {
+                //  Click
+                &:active {
                     filter: drop-shadow(0px 0px 20px #ce679ba0);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        filter: drop-shadow(0px 0px 20px #ce679ba0);
+                    }
                 }
             }
 

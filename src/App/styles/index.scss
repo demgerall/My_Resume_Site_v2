@@ -1,6 +1,23 @@
 @use 'scss-reset/reset';
 @use 'variables/globals';
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) #3e3e3e;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #3e3e3e;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary);
+        border: 3px solid #3e3e3e;
+    }
+}
+
 html {
     background-color: var(--background-color);
 }

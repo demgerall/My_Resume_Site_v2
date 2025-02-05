@@ -25,6 +25,7 @@
         flex-direction: column;
         gap: 32px;
 
+        //  Mobile
         @media screen and (max-width: 450px) {
             width: 100%;
 
@@ -35,6 +36,7 @@
             @include mixins.heading;
             color: var(--text-color);
 
+            //  Mobile
             @media screen and (max-width: 450px) {
                 @include mixins.heading-mobile;
             }
@@ -49,6 +51,7 @@
             flex-direction: column;
             gap: 32px;
 
+            //  Mobile
             @media screen and (max-width: 450px) {
                 gap: 16px;
             }

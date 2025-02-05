@@ -23,7 +23,7 @@ export const HelloSection = (props: HelloSectionProps) => {
 
     const TYPED_TEXT =
         'I am a Frontend Developer. Thank you for your interest.';
-    const TYPING_DELAY = 100;
+    const TYPING_DELAY = 75;
 
     useEffect(() => {
         setTimeout(() => {

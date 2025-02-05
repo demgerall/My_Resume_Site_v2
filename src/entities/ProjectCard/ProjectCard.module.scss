@@ -42,8 +42,16 @@
             width: 100%;
         }
 
-        &:hover {
+        //  Click
+        &:active {
             scale: 1.02;
+        }
+
+        //Hover
+        @media (hover: hover) {
+            &:hover {
+                scale: 1.02;
+            }
         }
     }
 
@@ -108,8 +116,16 @@
                 }
             }
 
-            &:hover {
+            //  Click
+            &:active {
                 color: var(--color-primary);
+            }
+
+            //Hover
+            @media (hover: hover) {
+                &:hover {
+                    color: var(--color-primary);
+                }
             }
         }
 
@@ -148,8 +164,16 @@
                     padding: 12px;
                 }
 
-                &:hover {
+                //  Click
+                &:active {
                     border: 2px solid var(--color-primary);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        border: 2px solid var(--color-primary);
+                    }
                 }
 
                 html[data-theme='light'] &_img {
@@ -184,8 +208,16 @@
                     font-size: 16px;
                 }
 
-                &:hover {
+                //  Click
+                &:active {
                     border: 2px solid var(--color-primary);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        border: 2px solid var(--color-primary);
+                    }
                 }
             }
         }
@@ -214,9 +246,19 @@
         }
     }
 
-    &:hover {
+    //  Click
+    &:active {
         -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+    }
+
+    //Hover
+    @media (hover: hover) {
+        &:hover {
+            -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        }
     }
 }

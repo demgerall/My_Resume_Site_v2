@@ -6,6 +6,7 @@ import styles from './StandartButton.module.scss';
 interface StandartButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
     children: React.ReactNode;
+    onClick?: () => void;
 }
 
 export const StandartButton = (props: StandartButtonProps) => {

@@ -1,5 +1,5 @@
-.button {
-    padding: 10px;
+.modalCloseButton {
+    transition: all 0.3s ease-in-out;
 
     //  Click
     &:active {
@@ -11,5 +11,9 @@
         &:hover {
             scale: 1.2;
         }
+    }
+
+    html[data-theme='light'] & {
+        filter: invert(100%);
     }
 }

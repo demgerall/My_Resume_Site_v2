@@ -84,8 +84,16 @@
                 }
             }
 
-            &:hover {
+            //  Click
+            &:active {
                 color: var(--color-primary);
+            }
+
+            //Hover
+            @media (hover: hover) {
+                &:hover {
+                    color: var(--color-primary);
+                }
             }
         }
         &_position {
@@ -120,9 +128,19 @@
         }
     }
 
-    &:hover {
+    //  Click
+    &:active {
         -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+    }
+
+    //Hover
+    @media (hover: hover) {
+        &:hover {
+            -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        }
     }
 }

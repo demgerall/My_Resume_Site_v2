@@ -4,6 +4,7 @@ import { delay, motion } from 'framer-motion';
 import classNames from 'classnames';
 
 import { ProjectCardsList } from '@/features';
+import { useOrientation } from '@/shared/libs/hooks';
 
 import styles from './PortfolioSection.module.scss';
 
@@ -13,6 +14,8 @@ interface PortfolioSectionProps {
 
 export const PortfolioSection = (props: PortfolioSectionProps) => {
     const { className = '' } = props;
+
+    const isLandscape = useOrientation();
 
     const sectionAnimationVariants = {
         hidden: {
@@ -32,7 +35,7 @@ export const PortfolioSection = (props: PortfolioSectionProps) => {
             id="projects"
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
+            viewport={{ amount: isLandscape ? 0.2 : 0.1, once: true }}
         >
             <motion.h2
                 className={styles.portfolioSection_title}

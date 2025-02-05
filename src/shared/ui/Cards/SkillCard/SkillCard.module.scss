@@ -27,10 +27,20 @@
         @include mixins.skill-card-text-mobile;
     }
 
-    &:hover {
+    //  Click
+    &:active {
         -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
         box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+    }
+
+    //Hover
+    @media (hover: hover) {
+        &:hover {
+            -webkit-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            -moz-box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+            box-shadow: 4px 4px 32px 0px var(--shadow-color) inset;
+        }
     }
 
     &_mark {

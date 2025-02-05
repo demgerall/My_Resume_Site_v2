@@ -21,8 +21,16 @@
         height: 48px;
     }
 
-    &:hover {
+    //  Click
+    &:active {
         border: 2px solid var(--color-primary);
+    }
+
+    //Hover
+    @media (hover: hover) {
+        &:hover {
+            border: 2px solid var(--color-primary);
+        }
     }
 
     &_img {

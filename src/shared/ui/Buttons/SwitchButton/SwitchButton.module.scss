@@ -14,8 +14,16 @@
 
     transition: border-color 0.3s ease-in-out;
 
-    &:hover {
+    //  Click
+    &:active {
         border: 2px solid var(--color-primary);
+    }
+
+    //  Hover
+    @media (hover: hover) {
+        &:hover {
+            border: 2px solid var(--color-primary);
+        }
     }
 
     &_switcher {
@@ -33,11 +41,11 @@
 
         &__pressed {
             transform: translateX(100%);
-            animation: switchPressed 0.3s ease-in-out;
+            animation: isPressed 0.3s ease-in-out;
         }
         &__notPressed {
             transform: translateX(0%);
-            animation: switchNotPressed 0.3s ease-in-out;
+            animation: isNotPressed 0.3s ease-in-out;
         }
     }
 
@@ -55,7 +63,7 @@
     }
 }
 
-@keyframes switchPressed {
+@keyframes isPressed {
     from {
         transform: translateX(0%);
     }
@@ -63,7 +71,7 @@
         transform: translateX(100%);
     }
 }
-@keyframes switchNotPressed {
+@keyframes isNotPressed {
     from {
         transform: translateX(100%);
     }

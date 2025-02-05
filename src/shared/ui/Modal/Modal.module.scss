@@ -1,0 +1,62 @@
+.modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+
+    &__opened &_overlay {
+        animation: modalOpen 0.3s ease-in-out;
+    }
+
+    &__is_closing &_overlay {
+        animation: modalClose 0.3s ease-in-out;
+    }
+
+    &_overlay {
+        width: 100%;
+        height: 100%;
+
+        background-color: var(--background-color);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.3s ease-in-out;
+
+        &_content {
+            width: 100%;
+            height: 100%;
+            padding: 20px 10vw 10vh 10vw;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+
+            &_controls {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+@keyframes modalOpen {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalClose {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}

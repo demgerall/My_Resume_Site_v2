@@ -2,16 +2,33 @@
 
 .navMenu {
     &_wrapper {
-        display: flex;
-        align-items: center;
-        gap: 32px;
+        &__horizontal {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        &__vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
 
         &_item {
             &_link {
                 @include mixins.link;
 
-                &:hover {
+                //  Click
+                &:active {
                     color: var(--color-primary);
+                }
+
+                //Hover
+                @media (hover: hover) {
+                    &:hover {
+                        color: var(--color-primary);
+                    }
                 }
             }
         }

@@ -4,7 +4,11 @@ import classNames from 'classnames';
 
 import { getProjects } from '@/features';
 import { ProjectCard } from '@/entities';
-import { useAppDispatch, useAppSelector } from '@/shared/libs/hooks';
+import {
+    useAppDispatch,
+    useAppSelector,
+    useOrientation,
+} from '@/shared/libs/hooks';
 
 import styles from './ProjectCardsList.module.scss';
 
@@ -14,6 +18,8 @@ interface ProjectCardsListProps {
 
 export const ProjectCardsList = (props: ProjectCardsListProps) => {
     const { className = '' } = props;
+
+    const isLandscape = useOrientation();
 
     const dispatch = useAppDispatch();
 
@@ -40,7 +46,7 @@ export const ProjectCardsList = (props: ProjectCardsListProps) => {
             className={classNames(styles.projectCardsList, [className])}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.2, once: true }}
+            viewport={{ amount: isLandscape ? 0.2 : 0.1, once: true }}
         >
             {projects.slice(0, 3).map((project, index) => {
                 return (

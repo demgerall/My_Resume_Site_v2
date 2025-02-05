@@ -21,6 +21,7 @@
         @include mixins.heading;
         color: var(--text-color);
 
+        //  Mobile
         @media screen and (max-width: 450px) {
             @include mixins.heading-mobile;
         }
@@ -36,6 +37,7 @@
         align-items: center;
         gap: 48px;
 
+        //  Mobile
         @media screen and (max-width: 450px) {
             gap: 24px;
         }

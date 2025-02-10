@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
+import { getWorks } from '@/features';
 import { WorkCard } from '@/entities';
-import { getWorks } from './api/worksReducer';
 import { useAppDispatch, useAppSelector } from '@/shared/libs/hooks';
 
 import styles from './WorksCardsList.module.scss';
@@ -19,9 +20,11 @@ export const WorksCardsList = (props: WorksCardsListProps) => {
 
     const { works, isLoading } = useAppSelector(({ works }) => works);
 
+    const { i18n } = useTranslation();
+
     useEffect(() => {
-        dispatch(getWorks());
-    }, [dispatch]);
+        dispatch(getWorks(i18n.language));
+    }, [dispatch, i18n.language]);
 
     const workAnimationVariants = {
         hidden: {

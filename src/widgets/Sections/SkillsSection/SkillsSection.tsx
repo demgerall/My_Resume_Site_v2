@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { delay, motion } from 'framer-motion';
 import classNames from 'classnames';
 
@@ -16,29 +17,31 @@ export const SkillsSection = (props: SkillsSectionProps) => {
 
     const isLandscape = useOrientation();
 
+    const { t } = useTranslation('skills');
+
     const hardSkillsList = [
         'HTML (HTML5), JSX',
-        'CSS (CSS3), SASS (SCSS), Animations, Framer Motion',
-        'JavaScript (ES6+, OOP), TypeScript',
+        t('hardSkillsList.styles'),
+        t('hardSkillsList.prog_lang'),
         'React',
         'Redux (Redux Toolkit)',
         'React Hook Form, Axios, React Router, React Query',
         'Vite',
-        'BEM, Feature-Sliced Design, Accessibility, UX',
+        t('hardSkillsList.methodology'),
         'Git (GitHub, BitBucket, GitLab)',
         'Figma, Adobe Photoshop, Adobe Illustrator',
-        'Competent written and oral speech',
-        'English level - B1',
+        t('hardSkillsList.speech'),
+        t('hardSkillsList.english'),
     ];
     const softSkillsList = [
-        'I know how to work in a team, and I have experience communicating with designers, managers, and developers from other fields.',
-        'I follow deadlines and requirements responsibly.',
-        'I am attentive to the details of the terms of reference.',
-        'I am demanding about the quality of my code, I follow the style and purity of the code.',
-        'I welcome constructive criticism and am always happy to find new points for professional and personal growth.',
-        'I know how to resolve conflict situations and not create them.',
-        'I have experience in mentoring and training junior specialists.',
-        'I strive to improve my skills by constantly learning new technologies in my field of activity',
+        t('softSkillsList.teamwork'),
+        t('softSkillsList.deadlines'),
+        t('softSkillsList.details'),
+        t('softSkillsList.code_quality'),
+        t('softSkillsList.criticism'),
+        t('softSkillsList.conflicts'),
+        t('softSkillsList.mentoring'),
+        t('softSkillsList.learning'),
     ];
 
     const sectionAnimationVariants = {
@@ -83,9 +86,9 @@ export const SkillsSection = (props: SkillsSectionProps) => {
                             styles.skillsSection_hardSkills_title__primary
                         }
                     >
-                        Hard
+                        {t('title.hard')}
                     </span>{' '}
-                    Skills
+                    {t('title.skills')}
                 </h2>
                 <ul className={styles.skillsSection_hardSkills_skillCardsBox}>
                     {hardSkillsList.map((skill, index) => {
@@ -112,9 +115,9 @@ export const SkillsSection = (props: SkillsSectionProps) => {
                             styles.skillsSection_softSkills_title__primary
                         }
                     >
-                        Soft
+                        {t('title.soft')}
                     </span>{' '}
-                    Skills
+                    {t('title.skills')}
                 </h2>
                 <ul className={styles.skillsSection_softSkills_skillCardsBox}>
                     {softSkillsList.map((skill, index) => {

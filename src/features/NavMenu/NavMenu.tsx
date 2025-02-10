@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
 import classNames from 'classnames';
 
 import styles from './NavMenu.module.scss';
@@ -12,6 +13,8 @@ interface NavMenuProps {
 
 export const NavMenu = (props: NavMenuProps) => {
     const { className = '', orientation, onClose } = props;
+
+    const { t } = useTranslation('navigation');
 
     return (
         <nav className={classNames(styles.navMenu, [className])}>
@@ -30,7 +33,7 @@ export const NavMenu = (props: NavMenuProps) => {
                             to={'/My_Resume_Site_v2/#about'}
                             onClick={onClose}
                         >
-                            About
+                            {t('about')}
                         </HashLink>
                     </li>
                 )}
@@ -41,7 +44,7 @@ export const NavMenu = (props: NavMenuProps) => {
                         to={'/My_Resume_Site_v2/#skills'}
                         onClick={onClose}
                     >
-                        Skills
+                        {t('skills')}
                     </HashLink>
                 </li>
                 <li>
@@ -51,7 +54,7 @@ export const NavMenu = (props: NavMenuProps) => {
                         to={'/My_Resume_Site_v2/#projects'}
                         onClick={onClose}
                     >
-                        My Projects
+                        {t('projects')}
                     </HashLink>
                 </li>
                 <li>
@@ -61,7 +64,7 @@ export const NavMenu = (props: NavMenuProps) => {
                         to={'/My_Resume_Site_v2/#work_experience'}
                         onClick={onClose}
                     >
-                        Work Experience
+                        {t('experience')}
                     </HashLink>
                 </li>
                 <li>
@@ -71,7 +74,7 @@ export const NavMenu = (props: NavMenuProps) => {
                         to={'/My_Resume_Site_v2/#contacts'}
                         onClick={onClose}
                     >
-                        Contacts
+                        {t('contacts')}
                     </HashLink>
                 </li>
             </ol>

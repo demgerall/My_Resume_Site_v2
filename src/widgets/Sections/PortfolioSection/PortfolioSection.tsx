@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { delay, motion } from 'framer-motion';
 import classNames from 'classnames';
 
@@ -16,6 +17,8 @@ export const PortfolioSection = (props: PortfolioSectionProps) => {
     const { className = '' } = props;
 
     const isLandscape = useOrientation();
+
+    const { t } = useTranslation('portfolio');
 
     const sectionAnimationVariants = {
         hidden: {
@@ -42,9 +45,9 @@ export const PortfolioSection = (props: PortfolioSectionProps) => {
                 custom={1}
                 variants={sectionAnimationVariants}
             >
-                My{' '}
+                {t('title.my')}
                 <span className={styles.portfolioSection_title__primary}>
-                    Projects
+                    {t('title.projects')}
                 </span>
             </motion.h2>
             <motion.div
@@ -59,7 +62,7 @@ export const PortfolioSection = (props: PortfolioSectionProps) => {
                         styles.portfolioSection_projectsBlock_showMoreLink
                     }
                 >
-                    All my projects
+                    {t('buttons.projects')}
                 </Link>
             </motion.div>
         </motion.section>

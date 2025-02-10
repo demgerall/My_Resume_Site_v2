@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
@@ -15,14 +16,14 @@ interface HelloSectionProps {
 }
 
 export const HelloSection = (props: HelloSectionProps) => {
-    const { className = '', ...otherProps } = props;
+    const { className = '' } = props;
 
     const [showLogos, setShowLogos] = useState(false);
     const [startLogosRotating, setStartLogosRotating] = useState(false);
     const [showLinks, setShowLinks] = useState(false);
 
-    const TYPED_TEXT =
-        'I am a Frontend Developer. Thank you for your interest.';
+    const { t } = useTranslation('hello');
+
     const TYPING_DELAY = 75;
 
     useEffect(() => {
@@ -36,7 +37,9 @@ export const HelloSection = (props: HelloSectionProps) => {
             () => {
                 setShowLinks(true);
             },
-            TYPING_DELAY * TYPED_TEXT.length + 500,
+            TYPING_DELAY *
+                t('typed_text', { profession: 'Frontend Developer' }).length +
+                500,
         );
     }, []);
 
@@ -67,20 +70,25 @@ export const HelloSection = (props: HelloSectionProps) => {
                     <span
                         className={styles.helloSection_textBlock_title__primary}
                     >
-                        Hello!
+                        {t('static_text.hello')}
                     </span>
                     <br />
-                    My name is{' '}
+                    {t('static_text.introduction')}
                     <span
                         className={
                             styles.helloSection_textBlock_title__underlined
                         }
                     >
-                        Demid Chebakov
+                        {t('static_text.name')}
                     </span>
                     .
                     <br />
-                    <TextTypier text={TYPED_TEXT} interval={TYPING_DELAY} />
+                    <TextTypier
+                        text={t('typed_text', {
+                            profession: 'Frontend Developer',
+                        })}
+                        interval={TYPING_DELAY}
+                    />
                     <span
                         className={styles.helloSection_textBlock_title_cursor}
                     >
@@ -101,7 +109,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                         }
                         to={'/My_Resume_Site_v2/#contacts'}
                     >
-                        Contact
+                        {t('buttons.contact')}
                     </HashLink>
                     <Link
                         to={'/My_Resume_Site_v2/projects'}
@@ -109,7 +117,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                             styles.helloSection_textBlock_linksBlock_showMoreLink
                         }
                     >
-                        All my projects
+                        {t('buttons.projects')}
                     </Link>
                 </div>
             </motion.div>

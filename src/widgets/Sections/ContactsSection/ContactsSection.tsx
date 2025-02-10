@@ -1,6 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import classNames from 'classnames';
 
 import { ContactChip } from '@/shared/ui/Chips';
 import { contactsEnum } from '@/shared/libs/enums';
@@ -13,6 +14,8 @@ interface ContactsSectionProps {
 
 export const ContactsSection = (props: ContactsSectionProps) => {
     const { className = '' } = props;
+
+    const { t } = useTranslation('contacts');
 
     const sectionAnimationVariants = {
         hidden: {
@@ -45,13 +48,13 @@ export const ContactsSection = (props: ContactsSectionProps) => {
                             styles.contactsSection_contactBlock_textBlock_title
                         }
                     >
-                        Do you want to ask <br />
+                        {t('title.question_start')} <br />
                         <span
                             className={
                                 styles.contactsSection_contactBlock_textBlock_title__primary
                             }
                         >
-                            something ?
+                            {t('title.question_end')}
                         </span>
                     </h2>
                     <p
@@ -59,8 +62,7 @@ export const ContactsSection = (props: ContactsSectionProps) => {
                             styles.contactsSection_contactBlock_textBlock_text
                         }
                     >
-                        Contact me. I am in touch mon-fri 12 noon to 10 p.m.
-                        (gmt).
+                        {t('paragraph')}
                     </p>
                 </div>
                 <div className={styles.contactsSection_contactBlock_linksBlock}>
@@ -87,7 +89,7 @@ export const ContactsSection = (props: ContactsSectionProps) => {
                             styles.contactsSection_contactBlock_linksBlock_author
                         }
                     >
-                        © Demid Chebakov, 2025
+                        {t('author')}
                     </p>
                 </div>
             </motion.div>

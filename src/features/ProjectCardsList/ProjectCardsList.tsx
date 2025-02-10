@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
@@ -25,9 +26,11 @@ export const ProjectCardsList = (props: ProjectCardsListProps) => {
 
     const { projects, isLoading } = useAppSelector(({ projects }) => projects);
 
+    const { i18n } = useTranslation();
+
     useEffect(() => {
-        dispatch(getProjects());
-    }, [dispatch]);
+        dispatch(getProjects(i18n.language));
+    }, [dispatch, i18n.language]);
 
     const projectAnimationVariants = {
         hidden: {

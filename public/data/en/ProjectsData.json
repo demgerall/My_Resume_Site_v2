@@ -1,0 +1,83 @@
+[
+    {
+        "name": "My resume website",
+        "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
+        "githubPagesURL": "https://demgerall.github.io/My_Resume_Site_v2",
+        "images": ["/My_Resume_Site_v2/images/My_Resume_Site/mainPage.png"],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "scss",
+            "i18n",
+            "framer-motion",
+            "adobe-photoshop"
+        ],
+        "description": "The website is my portfolio and resume. It describes my technical and personal skills, presents demo projects developed using various tools, describes my work experience and my contacts.",
+        "date": "Jan 2025"
+    },
+    {
+        "name": "A test assignment from Alpha Ecosystem",
+        "githubRepositoryURL": "https://github.com/demgerall/The_Alpha_Ecosystem_TestWork",
+        "githubPagesURL": "https://demgerall.github.io/The_Alpha_Ecosystem_TestWork/#/products",
+        "images": [
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
+        ],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "react-hook-form",
+            "scss"
+        ],
+        "description": "The page is designed for test work. The page displays a list of products received from FakeApi. The main focus is on the visual representation of the products, each of which is accompanied by an image, name and price. You can add products to favorites, delete them, or add them yourself using the form page. The site has pagination, as well as access to the favorites section. Each of the products has its own page where you can select images to view.",
+        "date": "Dec 2024"
+    },
+    {
+        "name": "The list of seminars. Test task",
+        "githubRepositoryURL": "https://github.com/demgerall/SeminarsList_Kupaev_TestWork",
+        "githubPagesURL": "https://demgerall.github.io/SeminarsList_Kupaev_TestWork/",
+        "images": [
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/mainPage.png",
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/delete_modal.png",
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/edit_modal.png"
+        ],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "react-hook-form",
+            "scss",
+            "framer-motion",
+            "skeleton"
+        ],
+        "description": "The page is made for test work. The page contains a list of seminars that the site receives using a json server. Seminars in this list can be deleted and edited. When deleting, a modal confirmation window appears, and when editing, a modal window with a form appears.",
+        "date": "Feb 2025"
+    },
+    {
+        "name": "A test assignment from GoszakazGroup",
+        "githubRepositoryURL": "https://github.com/demgerall/GoszakazGroupMainPage",
+        "githubPagesURL": "https://demgerall.github.io/GoszakazGroupMainPage/",
+        "images": [
+            "/My_Resume_Site_v2/images/GoszakazGroupMainPage/mainPage.png"
+        ],
+        "usedDevTools": ["html", "css", "scss", "figma"],
+        "description": "The page was created for a test task on HTML layout. Displays a list of news items. The main focus is on the visual representation of the main page, which contains blocks with various articles. Most of the elements have hover animations. The page has an adaptive design.",
+        "date": "Nov 2024"
+    }
+]

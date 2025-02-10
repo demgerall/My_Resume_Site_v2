@@ -1,6 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import classNames from 'classnames';
 
 import { WorksCardsList } from '@/features';
 
@@ -12,6 +13,8 @@ interface WorkExperienceSectionProps {
 
 export const WorkExperienceSection = (props: WorkExperienceSectionProps) => {
     const { className = '' } = props;
+
+    const { t } = useTranslation('experience');
 
     const sectionAnimationVariants = {
         hidden: {
@@ -38,9 +41,9 @@ export const WorkExperienceSection = (props: WorkExperienceSectionProps) => {
                 custom={1}
                 variants={sectionAnimationVariants}
             >
-                Work{' '}
+                {t('title.work')}
                 <span className={styles.workExperienceSection_title__primary}>
-                    Experience
+                    {t('title.experience')}
                 </span>
             </motion.h2>
             <motion.div

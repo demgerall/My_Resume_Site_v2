@@ -1,0 +1,12 @@
+{
+    "static_text": {
+        "hello": "Hello!",
+        "introduction": "My name is ",
+        "name": "Demid Chebakov"
+    },
+    "typed_text": "I am a {{ profession }}. Thank you for your interest.",
+    "buttons": {
+        "contact": "Contact",
+        "projects": "All my projects"
+    }
+}

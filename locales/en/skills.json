@@ -1,0 +1,24 @@
+{
+    "hardSkillsList": {
+        "styles": "CSS (CSS3), SASS (SCSS), Animations, Framer Motion",
+        "prog_lang": "JavaScript (ES6+, OOP), TypeScript",
+        "methodology": "BEM, Feature-Sliced Design, Accessibility, UX",
+        "speech": "Competent written and oral speech",
+        "english": "English level - B1"
+    },
+    "softSkillsList": {
+        "teamwork": "I know how to work in a team, and I have experience communicating with designers, managers, and developers from other fields.",
+        "deadlines": "I follow deadlines and requirements responsibly.",
+        "details": "I am attentive to the details of the terms of reference.",
+        "code_quality": "I am demanding about the quality of my code, I follow the style and purity of the code.",
+        "criticism": "I welcome constructive criticism and am always happy to find new points for professional and personal growth.",
+        "conflicts": "I know how to resolve conflict situations and not create them.",
+        "mentoring": "I have experience in mentoring and training junior specialists.",
+        "learning": "I strive to improve my skills by constantly learning new technologies in my field of activity"
+    },
+    "title": {
+        "hard": "Hard",
+        "soft": "Soft",
+        "skills": "skills"
+    }
+}

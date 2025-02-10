@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Мой сайт-резюме",
+        "githubRepositoryURL": "https://github.com/demgerall/My_Resume_Site_v2",
+        "githubPagesURL": "https://demgerall.github.io/My_Resume_Site_v2",
+        "images": ["/My_Resume_Site_v2/images/My_Resume_Site/mainPage.png"],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "scss",
+            "i18n",
+            "framer-motion",
+            "adobe-photoshop"
+        ],
+        "description": "Сайт представляет собой мое портфолио и резюме. В нем описываются мои технические и личностные навыки, представлены демонстрационные проекты, разработанные с использованием различных инструментов, описан мой опыт работы и мои контакты.",
+        "date": "Январь 2025"
+    },
+    {
+        "name": "Тестовое задание от Alpha Ecosystem",
+        "githubRepositoryURL": "https://github.com/demgerall/The_Alpha_Ecosystem_TestWork",
+        "githubPagesURL": "https://demgerall.github.io/The_Alpha_Ecosystem_TestWork/#/products",
+        "images": [
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/mainPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/createProductPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/favouritesPage.png",
+            "/My_Resume_Site_v2/images/The_Alpha_Ecosystem_TestWork_images/productPage.png"
+        ],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "react-hook-form",
+            "scss"
+        ],
+        "description": "Страница выполнена для тестовой работы. на странице отображается список товаров, полученный с FakeApi. Основное внимание уделяется визуальному представлению товаров, каждый из которых сопровождается изображением, названием и ценой. Товары можно добавлять в избранное, удалять, а также их можно добавлять самостоятельно с помощью страницы с формой. Сайт имеет пагинацию, а также переход в раздел избранных товаров. Каждый из товаров имеет свою собственную страницу, на которой можно выбирать изображения для просмотра.",
+        "date": "Декабрь 2024"
+    },
+    {
+        "name": "Список семинаров. Тестовое задание",
+        "githubRepositoryURL": "https://github.com/demgerall/SeminarsList_Kupaev_TestWork",
+        "githubPagesURL": "https://demgerall.github.io/SeminarsList_Kupaev_TestWork/",
+        "images": [
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/mainPage.png",
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/delete_modal.png",
+            "/My_Resume_Site_v2/images/SeminarsList_Kupaev_TestWork/edit_modal.png"
+        ],
+        "usedDevTools": [
+            "vite",
+            "html",
+            "css",
+            "typescript",
+            "react",
+            "react-router",
+            "redux",
+            "react-hook-form",
+            "scss",
+            "framer-motion",
+            "skeleton"
+        ],
+        "description": "Страница выполнена для тестовой работы. На странице представлен список семинаров, который сайт получает с помощью json-server'a. Семинары в данном списке можно удалять и редактировать. При удалении появляется модальное окно подтверждения, а при редактировании появляется модальное окно с формой.",
+        "date": "Февраль 2025"
+    },
+    {
+        "name": "Тестовое задание от GoszakazGroup",
+        "githubRepositoryURL": "https://github.com/demgerall/GoszakazGroupMainPage",
+        "githubPagesURL": "https://demgerall.github.io/GoszakazGroupMainPage/",
+        "images": [
+            "/My_Resume_Site_v2/images/GoszakazGroupMainPage/mainPage.png"
+        ],
+        "usedDevTools": ["html", "css", "scss", "figma"],
+        "description": "Страница выполнена для тестового задания по HTML-верстке. Отображает список новостей. Основное внимание уделяется визуальному представлению главной страницы, которая содержит блоки с различными статьями. Большинство элементов имеют анимации при наведении. Страница имеет адаптивный дизайн.",
+        "date": "Ноябрь 2024"
+    }
+]

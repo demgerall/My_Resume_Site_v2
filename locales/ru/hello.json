@@ -1,0 +1,12 @@
+{
+    "static_text": {
+        "hello": "Здравствуйте!",
+        "introduction": "Меня зовут ",
+        "name": "Демид Чебаков"
+    },
+    "typed_text": "Я Frontend Developer. Спасибо за проявленный интерес.",
+    "buttons": {
+        "contact": "Контакты",
+        "projects": "Все проекты"
+    }
+}

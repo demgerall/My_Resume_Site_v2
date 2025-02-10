@@ -71,6 +71,13 @@
     letter-spacing: var(--letter-spacing);
 }
 
+@mixin select {
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-select);
+    font-weight: var(--weight-regular);
+    letter-spacing: var(--letter-spacing);
+}
+
 //  Mobile
 
 @mixin logo-text-mobile {

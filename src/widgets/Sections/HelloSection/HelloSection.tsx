@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 
-import { TextTyper } from '@/shared/ui/TextTyper';
+import { TextTypier } from '@/shared/ui/TextTypier';
 import LOTOS_MAN from '@/shared/assets/images/LotosMan.png';
 import LOTOS_MAN_ARMS from '@/shared/assets/images/LotosManArms.png';
 
@@ -80,7 +80,7 @@ export const HelloSection = (props: HelloSectionProps) => {
                     </span>
                     .
                     <br />
-                    <TextTyper text={TYPED_TEXT} interval={TYPING_DELAY} />
+                    <TextTypier text={TYPED_TEXT} interval={TYPING_DELAY} />
                     <span
                         className={styles.helloSection_textBlock_title_cursor}
                     >

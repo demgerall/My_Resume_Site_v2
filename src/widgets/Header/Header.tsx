@@ -3,8 +3,9 @@ import { HashLink } from 'react-router-hash-link';
 import classNames from 'classnames';
 
 import { NavMenu } from '@/features';
-import { StandartButton, SwitchButton } from '@/shared/ui/Buttons';
 import { Modal } from '@/shared/ui/Modal';
+import { StandardButton, SwitchButton } from '@/shared/ui/Buttons';
+import { LanguageSelector } from '@/shared/ui/Selectors';
 import { useOrientation, useTheme } from '@/shared/libs/hooks';
 
 import MoonIconBlack from '@/shared/assets/icons/moon_black.svg';
@@ -71,9 +72,9 @@ export const Header = (props: HeaderProps) => {
                 </span>
             </HashLink>
             {!isLandscape ? (
-                <StandartButton onClick={onShowModal}>
+                <StandardButton onClick={onShowModal}>
                     {theme === 'light' ? <MenuBlackIcon /> : <MenuWhiteIcon />}
-                </StandartButton>
+                </StandardButton>
             ) : (
                 <>
                     <NavMenu orientation="horizontal" />
@@ -84,6 +85,7 @@ export const Header = (props: HeaderProps) => {
                             iconLeft={<SunIconWhite />}
                             iconRight={<MoonIconBlack />}
                         />
+                        <LanguageSelector />
                     </div>
                 </>
             )}
@@ -96,6 +98,7 @@ export const Header = (props: HeaderProps) => {
                         iconLeft={<SunIconWhite />}
                         iconRight={<MoonIconBlack />}
                     />
+                    <LanguageSelector />
                 </div>
             </Modal>
         </header>

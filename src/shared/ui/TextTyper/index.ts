@@ -1,1 +1,0 @@
-export { TextTyper } from './TextTyper';

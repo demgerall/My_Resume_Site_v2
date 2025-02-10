@@ -1,15 +1,15 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './StandartButton.module.scss';
+import styles from './StandardButton.module.scss';
 
-interface StandartButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface StandardButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
     children: React.ReactNode;
     onClick?: () => void;
 }
 
-export const StandartButton = (props: StandartButtonProps) => {
+export const StandardButton = (props: StandardButtonProps) => {
     const { className = '', children, ...otherProps } = props;
 
     return (

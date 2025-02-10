@@ -6,7 +6,7 @@ interface TextTyperProps {
     timeout?: number;
 }
 
-export const TextTyper = (props: TextTyperProps) => {
+export const TextTypier = (props: TextTyperProps) => {
     const { text = '', interval = 100, timeout = 0 } = props;
 
     const [typedText, setTypedText] = useState('');

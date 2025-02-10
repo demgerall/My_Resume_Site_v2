@@ -1,0 +1,1 @@
+export { TextTypier } from './TextTypier';

@@ -20,6 +20,8 @@
 
 html {
     background-color: var(--background-color);
+
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -43,6 +45,8 @@ body {
     h6,
     p,
     a,
+    select,
+    option,
     button {
         color: var(--text-color);
         font-family: var(--font-montserrat);

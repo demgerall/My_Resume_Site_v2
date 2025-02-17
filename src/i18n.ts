@@ -12,6 +12,7 @@ i18n.use(Backend)
         },
         fallbackLng: ['en', 'ru'],
         load: 'languageOnly',
+        nonExplicitSupportedLngs: true,
         detection: {
             order: ['navigator', 'htmlTag'],
             caches: ['localStorage'],

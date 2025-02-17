@@ -89,6 +89,7 @@ export const Header = (props: HeaderProps) => {
                     </div>
                 </>
             )}
+
             <Modal isOpen={isModalOpen} onClose={onCloseModal}>
                 <NavMenu orientation="vertical" onClose={onCloseModal} />
                 <div className={styles.modal_buttonBlock}>

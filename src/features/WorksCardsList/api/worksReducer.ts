@@ -5,10 +5,10 @@ import { workType } from '@/shared/libs/types';
 
 export const getWorks = createAsyncThunk(
     'works/getWorks',
-    async (lang: string, thunkApi) => {
+    async (lng: string, thunkApi) => {
         try {
             const response = await axios.get(
-                `/My_Resume_Site_v2/data/${lang}/WorksData.json`,
+                `/My_Resume_Site_v2/data/${lng.slice(0, 2)}/WorksData.json`,
             );
             return response.data;
         } catch (error) {

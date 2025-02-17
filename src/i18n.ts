@@ -11,6 +11,7 @@ i18n.use(Backend)
             loadPath: '/My_Resume_Site_v2/locales/{{lng}}/{{ns}}.json',
         },
         fallbackLng: ['en', 'ru'],
+        load: 'languageOnly',
         detection: {
             order: ['navigator', 'htmlTag'],
             caches: ['localStorage'],

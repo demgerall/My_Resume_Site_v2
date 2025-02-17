@@ -5,10 +5,10 @@ import { projectType } from '@/shared/libs/types';
 
 export const getProjects = createAsyncThunk(
     'projects/getProjects',
-    async (lang: string, thunkApi) => {
+    async (lng: string, thunkApi) => {
         try {
             const response = await axios.get(
-                `/My_Resume_Site_v2/data/${lang}/ProjectsData.json`,
+                `/My_Resume_Site_v2/data/${lng.slice(0, 2)}/ProjectsData.json`,
             );
             return response.data;
         } catch (error) {

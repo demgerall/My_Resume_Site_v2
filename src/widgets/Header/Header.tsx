@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { Suspense, useCallback, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import classNames from 'classnames';
 
@@ -90,18 +90,20 @@ export const Header = (props: HeaderProps) => {
                 </>
             )}
 
-            <Modal isOpen={isModalOpen} onClose={onCloseModal}>
-                <NavMenu orientation="vertical" onClose={onCloseModal} />
-                <div className={styles.modal_buttonBlock}>
-                    <SwitchButton
-                        startPosition={theme === 'dark' ? 'right' : 'left'}
-                        onClick={toggleTheme}
-                        iconLeft={<SunIconWhite />}
-                        iconRight={<MoonIconBlack />}
-                    />
-                    <LanguageSelector />
-                </div>
-            </Modal>
+            <Suspense fallback={<></>}>
+                <Modal isOpen={isModalOpen} onClose={onCloseModal}>
+                    <NavMenu orientation="vertical" onClose={onCloseModal} />
+                    <div className={styles.modal_buttonBlock}>
+                        <SwitchButton
+                            startPosition={theme === 'dark' ? 'right' : 'left'}
+                            onClick={toggleTheme}
+                            iconLeft={<SunIconWhite />}
+                            iconRight={<MoonIconBlack />}
+                        />
+                        <LanguageSelector />
+                    </div>
+                </Modal>
+            </Suspense>
         </header>
     );
 };
